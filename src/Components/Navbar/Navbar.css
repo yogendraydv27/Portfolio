@@ -59,11 +59,11 @@
 }
 
 .nav-mob-close{
-    display: none;
+    display: flex;
 }
 
 .nav-mob-open{
-    display: none;
+    display: flex;
 }
 
 @media(max-width:768px){
