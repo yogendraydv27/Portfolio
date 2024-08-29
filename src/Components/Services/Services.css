@@ -78,3 +78,41 @@
     transition:0.4s;
 }
 
+@media(max-width:768px){
+    .services{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+
+    .services-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .services-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+
+    .services-format{
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .services-format h3{
+        font-size: 24px;
+    }
+
+    .services-format h2{
+        font-size: 30px;
+    }
+
+    .services-format p{
+        font-size: 20px;
+    }
+}

@@ -59,3 +59,52 @@
 .hero-resume:hover{
     border-color: #B415FF;
 }
+
+@media(max-width:768px){
+    .hero img{
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .hero h1{
+        font-size: 60px;
+    }
+
+    .hero-action{
+        font-size: 20px;
+    }
+
+    .hero-connect{
+        padding: 10px 20px;
+    }
+
+    .hero-resume{
+        padding: 10px 30px;
+    }
+
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+
+    .hero-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+
+
+}

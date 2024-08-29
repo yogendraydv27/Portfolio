@@ -64,9 +64,8 @@
 
 .footer-bottom-left{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 740px;
+    text-align: center;
+    padding-left: 340px;    
 }
 
 .footer-email-input:hover{
@@ -78,4 +77,37 @@
     transition: 0.3s;
 }
 
+@media(max-width:768px){
+    .footer{
+        margin: 50px 30px;
+    }
 
+    .footer-top{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-top-right{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-email-input{
+        padding-right: 0;
+    }
+
+    .footer-email-input input{
+        width: 100%;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom-left{
+        padding-left: 0;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}

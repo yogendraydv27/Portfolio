@@ -34,6 +34,13 @@
     margin-top: 20px;
 }
 
+.nav-logo{
+    width: 200px;
+    height: 50px;
+    justify-content: start;
+    align-self: flex-start;
+}
+
 .nav-menu li{
     display: flex;
     flex-direction: column;
@@ -81,6 +88,7 @@
     .nav-menu{
         position: fixed;
         flex-direction: column;
+        align-items: start;
         top: 0;
         gap: 30px;
         background-color: #1f0016;
