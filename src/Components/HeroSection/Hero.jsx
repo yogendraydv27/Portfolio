@@ -2,6 +2,16 @@ import React from 'react'
 import './Hero.css'
 import profile_img from '../../assets/profile_img1.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import resume from '../../assets/resume.pdf'
+
+function downloadPDF() {
+  const link = document.createElement('a');
+  link.href = resume;
+  link.setAttribute('download', 'resume.pdf');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 function Hero() {
   return (
@@ -11,7 +21,7 @@ function Hero() {
         <p>I am a frontend developer in Ghaziabad. I have experience of 1 year working at Indibus.</p>
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-            <div className="hero-resume">My Resume</div>
+            <div onClick={downloadPDF} className="hero-resume">My Resume</div>
         </div>
     </div>
   )
